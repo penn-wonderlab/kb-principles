@@ -14,7 +14,7 @@ export interface Principle {
     shortDescription: string;
     fullDescription: string;
     icon: string; // Emoji or icon name
-    category: 'Idea Generation' | 'Community' | 'Advancement' | 'Assessment';
+    category: 'Ideas' | 'Agents' | 'Community Practices';
     // New fields for expanded view
     askYourself?: string[];
     whatDoesItLookLike?: Example[];
@@ -29,7 +29,7 @@ export const principles: Principle[] = [
         shortDescription: 'Knowledge building starts with real ideas and authentic problems.',
         fullDescription: 'Knowledge problems arise from efforts to understand the world. The problems are real in the sense that they are problems that the learners really care about and that have no pre-specified answers.',
         icon: '💡',
-        category: 'Idea Generation',
+        category: 'Ideas',
         askYourself: [
             'Are students working on problems they genuinely care about?',
             'Do the problems have pre-specified answers, or are they open to genuine inquiry?',
@@ -67,7 +67,7 @@ export const principles: Principle[] = [
         shortDescription: 'All ideas are treated as improvable.',
         fullDescription: 'Participants work continuously to improve the quality, coherence, and utility of ideas. For such work to prosper, the culture must be one of psychological safety, so that people feel safe in taking risks, revealing ignorance, and voicing half-baked notions.',
         icon: '🌱',
-        category: 'Idea Generation',
+        category: 'Ideas',
         askYourself: [
             'Is the classroom culture one where students feel safe sharing incomplete ideas?',
             'Are ideas treated as works in progress rather than final products?',
@@ -105,7 +105,7 @@ export const principles: Principle[] = [
         shortDescription: 'Idea diversity is essential to the development of knowledge.',
         fullDescription: 'To understand an idea is to understand the ideas that surround it, including those that stand in contrast to it. Idea diversity creates a rich environment for ideas to evolve into new and more refined forms.',
         icon: '🌈',
-        category: 'Idea Generation',
+        category: 'Ideas',
         askYourself: [
             'Are students encouraged to generate multiple perspectives on the same problem?',
             'Is diversity of ideas valued, even when ideas seem unconventional?',
@@ -143,7 +143,7 @@ export const principles: Principle[] = [
         shortDescription: 'Creative synthesis of ideas.',
         fullDescription: 'Means working with diverse ideas, finding connections, and synthesizing them into a more inclusive and higher-level understanding. It is about moving beyond the trivial to the profound.',
         icon: '🚀',
-        category: 'Advancement',
+        category: 'Ideas',
         askYourself: [
             'Are students synthesizing diverse ideas into higher-level concepts?',
             'Do students move beyond listing facts to creating new insights?',
@@ -181,7 +181,7 @@ export const principles: Principle[] = [
         shortDescription: 'Learners take charge of their own knowledge advancement.',
         fullDescription: 'Participants set forth their own ideas and negotiate a fit between their personal ideas and the ideas of others, using contrasts to spark and sustain knowledge advancement rather than depending on others to chart that course for them.',
         icon: '🧠',
-        category: 'Community',
+        category: 'Agents',
         askYourself: [
             'Do students take responsibility for their own learning goals?',
             'Are students making decisions about what to investigate and how?',
@@ -218,8 +218,8 @@ export const principles: Principle[] = [
         title: 'Community Knowledge',
         shortDescription: 'Collective responsibility for community knowledge.',
         fullDescription: 'The goal is to advance the knowledge of the community, not just individual knowledge. Members contribute to a shared public space of knowledge, which becomes a resource for the whole community.',
-        icon: '🤝',
-        category: 'Community',
+        icon: '🏛️',
+        category: 'Community Practices',
         askYourself: [
             'Are students contributing to shared knowledge resources?',
             'Is collective advancement valued as much as individual achievement?',
@@ -257,7 +257,7 @@ export const principles: Principle[] = [
         shortDescription: 'All participants are legitimate contributors.',
         fullDescription: 'All participants are empowered to engage in knowledge building. Diversity is not just tolerated but viewed as a strength. There is a sense of shared purpose and a commitment to the advancement of knowledge for the common good.',
         icon: '🌍',
-        category: 'Community',
+        category: 'Community Practices',
         askYourself: [
             'Are all students recognized as legitimate contributors to knowledge?',
             'Is diversity of background and perspective valued as a strength?',
@@ -295,7 +295,7 @@ export const principles: Principle[] = [
         shortDescription: 'Expertise is distributed within and between communities.',
         fullDescription: 'Symmetry in knowledge advancement means that to give knowledge is to get knowledge. The goal is to advance the knowledge of others as well as one\'s own.',
         icon: '⚖️',
-        category: 'Community',
+        category: 'Community Practices',
         askYourself: [
             'Do students learn by teaching others?',
             'Is expertise distributed rather than concentrated in a few individuals?',
@@ -333,7 +333,7 @@ export const principles: Principle[] = [
         shortDescription: 'Knowledge building is not confined to school.',
         fullDescription: 'Knowledge building is not an add-on but is central to all work. It pervades mental life, in and out of school.',
         icon: '🌐',
-        category: 'Advancement',
+        category: 'Community Practices',
         askYourself: [
             'Do students see connections between school learning and life outside school?',
             'Is knowledge building integrated across all subjects and activities?',
@@ -371,7 +371,7 @@ export const principles: Principle[] = [
         shortDescription: 'Using sources to refine ideas, not just to find answers.',
         fullDescription: 'To know a discipline is to be in touch with the present state and growing edge of knowledge in the field. This requires respect for authoritative sources, combined with a critical stance and a willingness to question and improve upon them.',
         icon: '📚',
-        category: 'Advancement',
+        category: 'Agents',
         askYourself: [
             'Are students using authoritative sources to refine their own ideas?',
             'Do students critically analyze sources rather than accepting them at face value?',
@@ -409,7 +409,7 @@ export const principles: Principle[] = [
         shortDescription: 'Discourse that results in more than the sharing of knowledge.',
         fullDescription: 'The discourse of knowledge building results in the creation of new knowledge and the improvement of ideas. It is more than just sharing information; it is about transforming it.',
         icon: '💬',
-        category: 'Advancement',
+        category: 'Agents',
         askYourself: [
             'Do discussions lead to new insights and transformed understanding?',
             'Are students building on and connecting each other\'s ideas?',
@@ -447,7 +447,7 @@ export const principles: Principle[] = [
         shortDescription: 'Assessment is an integral part of the effort to advance knowledge.',
         fullDescription: 'Assessment is used to identify problems as the work proceeds and is embedded in the day-to-day workings of the organization. It is not a separate activity but is integral to the knowledge building process.',
         icon: '🧭',
-        category: 'Assessment',
+        category: 'Agents',
         askYourself: [
             'Is assessment embedded in daily learning rather than separate events?',
             'Do students use assessment to identify problems and drive improvement?',
