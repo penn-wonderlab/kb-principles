@@ -8,9 +8,21 @@ interface PrincipleCardProps {
     className?: string;
     isFlipped: boolean;
     onFlip: () => void;
+    onExpand: () => void;
 }
 
-export const PrincipleCard: React.FC<PrincipleCardProps> = ({ principle, className, isFlipped, onFlip }) => {
+export const PrincipleCard: React.FC<PrincipleCardProps> = ({
+    principle,
+    className,
+    isFlipped,
+    onFlip,
+    onExpand
+}) => {
+    const handleExpandClick = (e: React.MouseEvent) => {
+        e.stopPropagation(); // Prevent the card flip
+        onExpand();
+    };
+
     return (
         <div
             className={cn("relative h-80 w-full cursor-pointer perspective-1000", className)}
@@ -39,9 +51,15 @@ export const PrincipleCard: React.FC<PrincipleCardProps> = ({ principle, classNa
                     style={{ transform: 'rotateY(180deg)' }}
                 >
                     <h3 className="text-lg font-bold mb-4 border-b border-indigo-400 pb-2">{principle.title}</h3>
-                    <p className="text-sm leading-relaxed overflow-y-auto max-h-full scrollbar-hide">
+                    <p className="text-sm leading-relaxed overflow-y-auto max-h-full scrollbar-hide flex-1">
                         {principle.fullDescription}
                     </p>
+                    <button
+                        onClick={handleExpandClick}
+                        className="mt-4 px-4 py-2 bg-white/20 hover:bg-white/30 rounded-lg text-xs font-semibold transition-colors"
+                    >
+                        Click for more details →
+                    </button>
                 </div>
             </motion.div>
         </div>
