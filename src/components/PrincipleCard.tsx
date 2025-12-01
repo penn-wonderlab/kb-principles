@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import type { Principle } from '../data/principles';
 import { cn } from '../lib/utils';
@@ -6,19 +6,15 @@ import { cn } from '../lib/utils';
 interface PrincipleCardProps {
     principle: Principle;
     className?: string;
+    isFlipped: boolean;
+    onFlip: () => void;
 }
 
-export const PrincipleCard: React.FC<PrincipleCardProps> = ({ principle, className }) => {
-    const [isFlipped, setIsFlipped] = useState(false);
-
-    const handleFlip = () => {
-        setIsFlipped(!isFlipped);
-    };
-
+export const PrincipleCard: React.FC<PrincipleCardProps> = ({ principle, className, isFlipped, onFlip }) => {
     return (
         <div
             className={cn("relative h-80 w-full cursor-pointer perspective-1000", className)}
-            onClick={handleFlip}
+            onClick={onFlip}
         >
             <motion.div
                 className="h-full w-full relative preserve-3d"

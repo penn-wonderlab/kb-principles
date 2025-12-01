@@ -101,7 +101,7 @@ export const principles: Principle[] = [
         title: 'Embedded Transformative Assessment',
         shortDescription: 'Assessment is an integral part of the effort to advance knowledge.',
         fullDescription: 'Assessment is used to identify problems as the work proceeds and is embedded in the day-to-day workings of the organization. It is not a separate activity but is integral to the knowledge building process.',
-        icon: '📊',
+        icon: '🧭',
         category: 'Assessment',
     },
 ];

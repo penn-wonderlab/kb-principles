@@ -4,13 +4,20 @@ import { PrincipleCard } from './PrincipleCard';
 
 interface DeckProps {
     principles: Principle[];
+    flippedIds: Set<string>;
+    onFlip: (id: string) => void;
 }
 
-export const Deck: React.FC<DeckProps> = ({ principles }) => {
+export const Deck: React.FC<DeckProps> = ({ principles, flippedIds, onFlip }) => {
     return (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 p-6">
             {principles.map((principle) => (
-                <PrincipleCard key={principle.id} principle={principle} />
+                <PrincipleCard
+                    key={principle.id}
+                    principle={principle}
+                    isFlipped={flippedIds.has(principle.id)}
+                    onFlip={() => onFlip(principle.id)}
+                />
             ))}
         </div>
     );
