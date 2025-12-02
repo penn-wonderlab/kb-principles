@@ -14,7 +14,7 @@ export interface Principle {
     shortDescription: string;
     fullDescription: string;
     icon: string; // Emoji or icon name
-    category: 'Ideas' | 'Agents' | 'Community Practices';
+    category: 'Ideas' | 'Agents' | 'Community';
     // New fields for expanded view
     askYourself?: string[];
     whatDoesItLookLike?: Example[];
@@ -215,11 +215,11 @@ export const principles: Principle[] = [
     },
     {
         id: '6',
-        title: 'Community Knowledge',
+        title: 'Community Knowledge, Collective responsibility',
         shortDescription: 'Collective responsibility for community knowledge.',
         fullDescription: 'The goal is to advance the knowledge of the community, not just individual knowledge. Members contribute to a shared public space of knowledge, which becomes a resource for the whole community.',
         icon: '🏛️',
-        category: 'Community Practices',
+        category: 'Community',
         askYourself: [
             'Are students contributing to shared knowledge resources?',
             'Is collective advancement valued as much as individual achievement?',
@@ -257,7 +257,7 @@ export const principles: Principle[] = [
         shortDescription: 'All participants are legitimate contributors.',
         fullDescription: 'All participants are empowered to engage in knowledge building. Diversity is not just tolerated but viewed as a strength. There is a sense of shared purpose and a commitment to the advancement of knowledge for the common good.',
         icon: '🌍',
-        category: 'Community Practices',
+        category: 'Community',
         askYourself: [
             'Are all students recognized as legitimate contributors to knowledge?',
             'Is diversity of background and perspective valued as a strength?',
@@ -295,7 +295,7 @@ export const principles: Principle[] = [
         shortDescription: 'Expertise is distributed within and between communities.',
         fullDescription: 'Symmetry in knowledge advancement means that to give knowledge is to get knowledge. The goal is to advance the knowledge of others as well as one\'s own.',
         icon: '⚖️',
-        category: 'Community Practices',
+        category: 'Community',
         askYourself: [
             'Do students learn by teaching others?',
             'Is expertise distributed rather than concentrated in a few individuals?',
@@ -333,7 +333,7 @@ export const principles: Principle[] = [
         shortDescription: 'Knowledge building is not confined to school.',
         fullDescription: 'Knowledge building is not an add-on but is central to all work. It pervades mental life, in and out of school.',
         icon: '🌐',
-        category: 'Community Practices',
+        category: 'Agents',
         askYourself: [
             'Do students see connections between school learning and life outside school?',
             'Is knowledge building integrated across all subjects and activities?',
@@ -409,7 +409,7 @@ export const principles: Principle[] = [
         shortDescription: 'Discourse that results in more than the sharing of knowledge.',
         fullDescription: 'The discourse of knowledge building results in the creation of new knowledge and the improvement of ideas. It is more than just sharing information; it is about transforming it.',
         icon: '💬',
-        category: 'Agents',
+        category: 'Community',
         askYourself: [
             'Do discussions lead to new insights and transformed understanding?',
             'Are students building on and connecting each other\'s ideas?',
